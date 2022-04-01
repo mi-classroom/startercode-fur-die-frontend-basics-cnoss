@@ -36,7 +36,7 @@
 
     <dl>
       <dt>Competence</dt>
-      <dd>Competence is the feeling that one's actions are perceived as capable and effective instead of thinking that one is incapable and incompetent <cite>HASSENZAHL & DIEFENBACH, 2012, P. 1</cite>.</dd>
+      <dd>Competence is the feeling that one"s actions are perceived as capable and effective instead of thinking that one is incapable and incompetent <cite>HASSENZAHL & DIEFENBACH, 2012, P. 1</cite>.</dd>
 
       <dt>Relatedness</dt>
       <dd>Relatedness is the feeling of having intimate and personal relationships with the people in the environment, rather than feeling lonely or unnoticed <cite>HASSENZAHL & DIEFENBACH, 2012, P. 1</cite></dd>
@@ -99,6 +99,63 @@
 
     <img src="../assets/images/beispielbild.jpg" width="98" height="158" alt="Pinker Kreis auf weißer Fläche">
     <img src="../assets/images/beispielbild@2x.svg" alt="Pinker Kreis auf weißer Fläche">
+
+    <form action="https://res-of-server.de/my-form" method="get">
+      <label for="email">E-Mail Adresse</label>
+      <input id="email" name="email" type="text" placeholder="joe@example.com">
+    
+      <fieldset>
+        <legend>Type of Talk</legend>
+        <input id="talk-type-1"
+               name="talk-type"
+               type="radio"
+               value="main-stage" />
+        <label for="talk-type-1">Main Stage</label>
+        <input id="talk-type-2"
+               name="talk-type"
+               type="radio"
+               value="workshop"
+               checked />
+        <label for="talk-type-2">Workshop</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Type of Talk</legend>
+        <input id="talk-type-1"
+               name="talk-type"
+               type="checkbox"
+               value="main-stage" />
+        <label for="talk-type-1">Main Stage</label>
+        <input id="talk-type-2"
+               name="talk-type"
+               type="checkbox"
+               value="workshop"
+               checked />
+        <label for="talk-type-2">Workshop</label>
+      </fieldset>
+
+      <label for='t-shirt'>T-Shirt Size</label>
+      <select id='t-shirt' name='t-shirt' size=3>
+        <option value='xs'>Extra Small</option>
+        <option value='s'>Small</option>
+        <option value='m'>Medium</option>
+        <option value='l'>Large</option>
+      </select>
+      
+      <label for='abstract'>Abstract</label>
+      <textarea id='abstract' name='abstract'></textarea>
+      
+      <label for="avatar">Choose a profile picture:</label>
+      <input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+      <button>Submit via Button</button>
+    </form>
+    
 
   </body>
 </html>
